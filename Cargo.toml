@@ -1,0 +1,53 @@
+[workspace]
+resolver = "2"
+members = [
+    # Library crates
+    "crates/videofuser-binstruct",
+    "crates/videofuser-vfr",
+    "crates/videofuser-muxer",
+    "crates/videofuser-fs",
+    "crates/videofuser-ipc",
+    "crates/videofuser-parser-common",
+    "crates/videofuser-manifest",
+    "crates/videofuser-filter",
+    # Binaries
+    "bins/videofuser",
+    "bins/binstruct",
+    "bins/parser-h264",
+    "bins/parser-aac",
+    "bins/parser-ac3",
+    "bins/parser-h265",
+    "bins/parser-av1",
+    "bins/parser-mp3",
+    "bins/parser-eac3",
+    "bins/parser-dts",
+    "bins/parser-truehd",
+]
+
+[workspace.dependencies]
+# Internal crates
+videofuser-binstruct    = { path = "crates/videofuser-binstruct" }
+videofuser-vfr          = { path = "crates/videofuser-vfr" }
+videofuser-muxer        = { path = "crates/videofuser-muxer" }
+videofuser-fs           = { path = "crates/videofuser-fs" }
+videofuser-ipc          = { path = "crates/videofuser-ipc" }
+videofuser-parser-common = { path = "crates/videofuser-parser-common" }
+videofuser-manifest     = { path = "crates/videofuser-manifest" }
+videofuser-filter       = { path = "crates/videofuser-filter" }
+
+# External dependencies (cap. 17.2)
+fuser           = "0.14"
+ebml-iterable   = "0.6"
+byteorder       = "1"
+memmap2         = "0.9"
+tokio           = { version = "1", features = ["full"] }
+arc-swap        = "1"
+crossbeam       = "0.8"
+zstd            = "0.13"
+serde           = { version = "1", features = ["derive"] }
+rmp-serde       = "1"
+clap            = { version = "4", features = ["derive"] }
+tracing         = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+interval_tree   = "0.2"
+sha2            = "0.10"

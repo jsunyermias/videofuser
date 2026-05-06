@@ -1,0 +1,17 @@
+[package]
+name = "parser-h264"
+version = "0.1.0"
+edition = "2021"
+description = "H.264 / AVC codec parser (Annex B bitstream indexer)"
+
+[[bin]]
+name = "parser-h264"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-parser-common = { workspace = true }
+videofuser-vfr           = { workspace = true }
+clap                     = { workspace = true }
+byteorder                = { workspace = true }
+tracing                  = { workspace = true }
+tracing-subscriber       = { workspace = true }

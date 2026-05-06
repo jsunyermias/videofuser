@@ -1,0 +1,27 @@
+[package]
+name = "videofuser"
+version = "0.1.0"
+edition = "2021"
+description = "videofuser daemon and CLI client"
+
+[[bin]]
+name = "videofuser"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-binstruct = { workspace = true }
+videofuser-vfr       = { workspace = true }
+videofuser-muxer     = { workspace = true }
+videofuser-fs        = { workspace = true }
+videofuser-ipc       = { workspace = true }
+videofuser-filter    = { workspace = true }
+tokio                = { workspace = true }
+clap                 = { workspace = true }
+tracing              = { workspace = true }
+tracing-subscriber   = { workspace = true }
+arc-swap             = { workspace = true }
+crossbeam            = { workspace = true }
+interval_tree        = { workspace = true }
+sha2                 = { workspace = true }
+serde                = { workspace = true }
+rmp-serde            = { workspace = true }

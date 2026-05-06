@@ -1,0 +1,10 @@
+[package]
+name = "videofuser-vfr"
+version = "0.1.0"
+edition = "2021"
+description = "Schema and serialization for the videofuser VFR (Variable Frame Record) format"
+
+[dependencies]
+byteorder = { workspace = true }
+memmap2   = { workspace = true }
+zstd      = { workspace = true }
