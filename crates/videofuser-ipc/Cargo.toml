@@ -1,0 +1,11 @@
+[package]
+name = "videofuser-ipc"
+version = "0.1.0"
+edition = "2021"
+description = "IPC protocol (Unix socket + MessagePack) for videofuser daemon"
+
+[dependencies]
+serde     = { workspace = true }
+rmp-serde = { workspace = true }
+tokio     = { workspace = true }
+tracing   = { workspace = true }

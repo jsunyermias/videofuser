@@ -1,0 +1,12 @@
+[package]
+name = "videofuser-muxer"
+version = "0.1.0"
+edition = "2021"
+description = "MKV virtual reconstruction engine (raw/transform modes)"
+
+[dependencies]
+videofuser-binstruct = { workspace = true }
+videofuser-vfr       = { workspace = true }
+byteorder            = { workspace = true }
+memmap2              = { workspace = true }
+tracing              = { workspace = true }

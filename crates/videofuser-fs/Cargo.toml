@@ -1,0 +1,13 @@
+[package]
+name = "videofuser-fs"
+version = "0.1.0"
+edition = "2021"
+description = "FUSE multiplexor filesystem for videofuser"
+
+[dependencies]
+videofuser-muxer  = { workspace = true }
+videofuser-filter = { workspace = true }
+fuser             = { workspace = true }
+arc-swap          = { workspace = true }
+tokio             = { workspace = true }
+tracing           = { workspace = true }

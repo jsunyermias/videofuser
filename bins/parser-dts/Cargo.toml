@@ -1,0 +1,17 @@
+[package]
+name = "parser-dts"
+version = "0.1.0"
+edition = "2021"
+description = "DTS codec parser (Core / HD-HRA / HD-MA bitstream indexer)"
+
+[[bin]]
+name = "parser-dts"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-parser-common = { workspace = true }
+videofuser-vfr           = { workspace = true }
+clap                     = { workspace = true }
+byteorder                = { workspace = true }
+tracing                  = { workspace = true }
+tracing-subscriber       = { workspace = true }

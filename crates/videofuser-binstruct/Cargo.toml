@@ -1,0 +1,12 @@
+[package]
+name = "videofuser-binstruct"
+version = "0.1.0"
+edition = "2021"
+description = "Schema and serialization for the videofuser binstruct format"
+
+[dependencies]
+byteorder     = { workspace = true }
+ebml-iterable = { workspace = true }
+memmap2       = { workspace = true }
+sha2          = { workspace = true }
+zstd          = { workspace = true }

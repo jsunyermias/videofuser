@@ -1,0 +1,21 @@
+[package]
+name = "binstruct"
+version = "0.1.0"
+edition = "2021"
+description = "binstruct tool: gen / inspect / verify / verify-manifest subcommands"
+
+[[bin]]
+name = "binstruct"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-binstruct = { workspace = true }
+videofuser-vfr       = { workspace = true }
+videofuser-manifest  = { workspace = true }
+ebml-iterable        = { workspace = true }
+clap                 = { workspace = true }
+tracing              = { workspace = true }
+tracing-subscriber   = { workspace = true }
+sha2                 = { workspace = true }
+zstd                 = { workspace = true }
+byteorder            = { workspace = true }

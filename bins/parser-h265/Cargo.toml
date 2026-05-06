@@ -1,0 +1,17 @@
+[package]
+name = "parser-h265"
+version = "0.1.0"
+edition = "2021"
+description = "H.265 / HEVC codec parser (Annex B bitstream indexer)"
+
+[[bin]]
+name = "parser-h265"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-parser-common = { workspace = true }
+videofuser-vfr           = { workspace = true }
+clap                     = { workspace = true }
+byteorder                = { workspace = true }
+tracing                  = { workspace = true }
+tracing-subscriber       = { workspace = true }

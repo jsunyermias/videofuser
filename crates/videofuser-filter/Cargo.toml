@@ -1,0 +1,9 @@
+[package]
+name = "videofuser-filter"
+version = "0.1.0"
+edition = "2021"
+description = "Track filter resolver (audio and subtitle hierarchical lists)"
+
+[dependencies]
+videofuser-binstruct = { workspace = true }
+tracing              = { workspace = true }

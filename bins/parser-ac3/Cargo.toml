@@ -1,0 +1,17 @@
+[package]
+name = "parser-ac3"
+version = "0.1.0"
+edition = "2021"
+description = "AC-3 codec parser (ATSC A/52 bitstream indexer)"
+
+[[bin]]
+name = "parser-ac3"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-parser-common = { workspace = true }
+videofuser-vfr           = { workspace = true }
+clap                     = { workspace = true }
+byteorder                = { workspace = true }
+tracing                  = { workspace = true }
+tracing-subscriber       = { workspace = true }

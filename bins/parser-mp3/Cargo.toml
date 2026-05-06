@@ -1,0 +1,17 @@
+[package]
+name = "parser-mp3"
+version = "0.1.0"
+edition = "2021"
+description = "MP3 codec parser (MPEG audio bitstream indexer)"
+
+[[bin]]
+name = "parser-mp3"
+path = "src/main.rs"
+
+[dependencies]
+videofuser-parser-common = { workspace = true }
+videofuser-vfr           = { workspace = true }
+clap                     = { workspace = true }
+byteorder                = { workspace = true }
+tracing                  = { workspace = true }
+tracing-subscriber       = { workspace = true }
