@@ -10,3 +10,4 @@ ebml-iterable = { workspace = true }
 memmap2       = { workspace = true }
 sha2          = { workspace = true }
 zstd          = { workspace = true }
+thiserror     = "1"
