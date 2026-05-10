@@ -5,7 +5,5 @@ edition = "2021"
 description = "Parsing and generation of the four manifest formats (ebml, nfo, xml, md)"
 
 [dependencies]
-ebml-iterable = { workspace = true }
 byteorder     = { workspace = true }
-serde         = { workspace = true }
-tracing       = { workspace = true }
+thiserror     = "1"
