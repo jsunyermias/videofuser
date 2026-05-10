@@ -1150,6 +1150,8 @@ name = "videofuser-parser-common"
 version = "0.1.0"
 dependencies = [
  "byteorder",
+ "thiserror",
+ "videofuser-vfr",
 ]
 
 [[package]]
