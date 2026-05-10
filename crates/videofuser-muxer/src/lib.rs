@@ -1,12 +1,12 @@
 //! videofuser-muxer: stateless MKV virtual reconstruction engine.
 //!
-//! Phases 4A–4C: domain types, pure layout planner, and track materializer
-//! (reads raw bytes from track files, consulting `DownloadState` for
-//! availability).
+//! Phases 4A–4D: domain types, pure layout planner, track materializer, and
+//! the pure codec transformer (Annex B → AVCC for video, identity for audio).
 
 pub mod ebml;
 pub mod layout;
 pub mod materializer;
+pub mod transformer;
 pub mod types;
 pub mod vfr_index;
 
@@ -15,6 +15,7 @@ pub use layout::{
     plan_layout, Layout, LayoutSection, SectionEntry, TrackMeta,
 };
 pub use materializer::{compute_offset_and_len, materialize_frame, MaterializedFrame};
+pub use transformer::{transform_avcc, transform_raw};
 pub use types::{
     DiskRawFile, DownloadState, FullyAvailable, MemRawFile, MuxerError, RawFile, ReadPolicy,
     TrackSource,
