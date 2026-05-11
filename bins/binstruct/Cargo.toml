@@ -12,10 +12,17 @@ path = "src/main.rs"
 videofuser-binstruct = { workspace = true }
 videofuser-vfr       = { workspace = true }
 videofuser-manifest  = { workspace = true }
-ebml-iterable        = { workspace = true }
 clap                 = { workspace = true }
 tracing              = { workspace = true }
 tracing-subscriber   = { workspace = true }
 sha2                 = { workspace = true }
 zstd                 = { workspace = true }
 byteorder            = { workspace = true }
+serde                = { workspace = true }
+thiserror            = "1"
+serde_json           = "1"
+anyhow               = "1"
+
+[dev-dependencies]
+tempfile             = "3"
+serde_json           = "1"
