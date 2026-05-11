@@ -5,4 +5,6 @@ edition = "2021"
 description = "Common parser contract and shared types for videofuser codec parsers"
 
 [dependencies]
-byteorder = { workspace = true }
+byteorder        = { workspace = true }
+thiserror        = { workspace = true }
+videofuser-vfr   = { workspace = true }
