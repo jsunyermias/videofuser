@@ -1175,10 +1175,14 @@ version = "0.1.0"
 dependencies = [
  "arc-swap",
  "fuser",
+ "libc",
+ "tempfile",
  "tokio",
  "tracing",
+ "videofuser-binstruct",
  "videofuser-filter",
  "videofuser-muxer",
+ "videofuser-vfr",
 ]
 
 [[package]]

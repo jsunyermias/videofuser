@@ -11,3 +11,9 @@ fuser             = { workspace = true }
 arc-swap          = { workspace = true }
 tokio             = { workspace = true }
 tracing           = { workspace = true }
+libc              = { workspace = true }
+
+[dev-dependencies]
+tempfile          = { workspace = true }
+videofuser-binstruct = { workspace = true }
+videofuser-vfr       = { workspace = true }
